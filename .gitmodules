@@ -1,0 +1,6 @@
+[submodule "references/trade-desk-cli"]
+	path = references/trade-desk-cli
+	url = https://github.com/dunamismax/trade-desk-cli.git
+[submodule "references/ib_async"]
+	path = references/ib_async
+	url = https://github.com/ib-api-reloaded/ib_async.git
