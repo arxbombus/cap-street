@@ -1,0 +1,18 @@
+commit-msg:
+  commands:
+    'Linting commit messages with git-sumi':
+      run: uv run git-sumi --file {1}
+
+pre-commit:
+  parallel: true
+  commands:
+    # 'Testing with Pytest':
+    #   run: uv run pytest test
+
+    'Linting with Ruff':
+      glob: '*.py'
+      run: uv run ruff check {staged_files}
+
+    'Type checking with Ty':
+      glob: '*.py'
+      run: uv run ty check --force-exclude {staged_files}

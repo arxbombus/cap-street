@@ -1,0 +1,15 @@
+[project]
+name = "cap-street"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "git-sumi>=0.3.0",
+    "lefthook>=2.1.4",
+    "ruff>=0.15.5",
+    "ty>=0.0.21",
+]
